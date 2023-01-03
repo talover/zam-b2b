@@ -141,3 +141,90 @@ block content
             ul.info-list
               li.info-list__item
                 a.info-list__link(href="") Личная площадка под запрос
+                                            
+  section.section
+    .section__header 
+      .section__header-inner
+        h2.section__title Подарки для сотрудников и их детей
+    .section__cont 
+      .main-container
+        .info-p
+          .info-p__list-w.info-p__list-w--left
+            ul.info-list
+              li.info-list__item
+                a.info-list__link(href="") Сертификаты на услуги
+              li.info-list__item
+                a.info-list__link(href="") Сладкие подарки
+
+          .info-p__cont.info-p__cont--line
+            .info-p__img-w
+              img(src="img/info-p-4.webp", alt="").info-p__img
+
+            .info-p__list-cont
+              .info-p__list-w.info-p__list-w--left
+                ul.info-list
+                  li.info-list__item
+                    a.info-list__link(href="") Сертификаты на услуги
+                  li.info-list__item
+                    a.info-list__link(href="") Сладкие подарки
+
+              .info-p__list-w.info-p__list-w--right
+                ul.info-list
+                  li.info-list__item
+                    a.info-list__link(href="") Билеты в парк
+                  li.info-list__item
+                    a.info-list__link(href="") Путёвки в лагерь
+            
+            .info-p__cont-settings
+              form(action="") 
+                .form-box
+                  h3.form-box__title Стоимость заказа
+                  .price.col-full 
+                    span 75 000 ₽ #[span.price__old 84 500 ₽]
+
+                .form-box
+                  h3.form-box__title Выберите город
+                  .radio-group
+                    .radio-group__item.col-1-2
+                      label.radio-group__btn
+                        input(type="radio" name="sity" checked).radio-group__input
+                        .radio-group__cont Москва
+                                        
+                    .radio-group__item.col-1-2
+                      label.radio-group__btn
+                        input(type="radio" name="sity").radio-group__input
+                        .radio-group__cont Воронеж
+                                        
+                    .radio-group__item.col-1-2
+                      label.radio-group__btn
+                        input(type="radio" name="sity").radio-group__input
+                        .radio-group__cont Курган
+                                        
+                    .radio-group__item.col-1-2
+                      label.radio-group__btn
+                        input(type="radio" name="sity").radio-group__input
+                        .radio-group__cont Ярославль
+
+                .form-box.mb-0
+                  h3.form-box__title Сколько детей пойдёт в парк?
+
+                  .spinner
+                    .spinner__cont
+                      input(type="text" value="50").spinner__input
+                    button.spinner__btn
+                      svg.icon.icon--caret-down 
+                        use(href="img/sprite.svg#caret-down")
+                    button.spinner__btn
+                      svg.icon.icon--caret-up
+                        use(href="img/sprite.svg#caret-up")
+                    .spinner__info Минимальный заказ от 50 детей
+              
+                .info-p__btn-submit
+                  a(href="").btn.btn--primary Скачать презентацию
+                  
+          .info-p__list-w.info-p__list-w--right
+            ul.info-list
+              li.info-list__item
+                a.info-list__link(href="") Билеты в парк
+              li.info-list__item
+                a.info-list__link(href="") Путёвки в лагерь
