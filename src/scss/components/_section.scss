@@ -30,6 +30,15 @@
   &__cont {
     padding: 10px 0;
   }
+
+  &__info-quote {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    border-left: 2px solid #FFFFFF;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
 }
 
 @media(min-width: 640px) {
@@ -50,6 +59,29 @@
 
     &__title {
       font-size: 40px;
+    }
+
+    &__info-quote-wrap {
+      display: flex;
+      flex-wrap: wrap;
+
+      .section__title,
+      .section__info-quote {
+        width: 50%;
+      }
+
+      .section__title {
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+
+    &__info-quote {
+      margin-top: 0;
+      font-size: 40px;
+      padding-left: 15px;
     }
   }
 }
