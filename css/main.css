@@ -1121,6 +1121,33 @@ button, input {
   overflow: hidden;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 1px solid;
+  transition: 0.3s all ease;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(51, 67, 226, 0.35);
+  border-radius: 100px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.btn--primary {
+  background: #3343E2;
+  border-color: #3343E2;
+  color: #fff;
+}
+.btn--primary:hover {
+  background: #1c2cc6;
+  border-color: #1c2cc6;
+}
+
 .section {
   margin-bottom: 40px;
 }
@@ -1145,7 +1172,8 @@ button, input {
   }
   .section__header-inner {
     margin: auto;
-    max-width: 620px;
+    max-width: 696px;
+    padding: 0 38px;
   }
   .section__cont {
     padding: 20px 0;
@@ -1183,6 +1211,14 @@ button, input {
   width: 100%;
   max-width: 620px;
 }
+.info-p__btn-submit {
+  margin: 20px auto 0;
+  max-width: 477px;
+}
+.info-p__btn-submit .btn {
+  width: 100%;
+}
+
 .info-list {
   padding: 0;
   list-style: none;
@@ -1213,6 +1249,22 @@ button, input {
   .info-p__list-cont .info-p__list-w {
     width: 50%;
     padding: 0 10px;
+  }
+  .info-p__cont--line {
+    position: relative;
+    padding-bottom: 20px;
+  }
+  .info-p__cont--line:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -1px;
+    height: 1px;
+    width: 10000px;
+    background: #8BCB94;
   }
 }
 @media (min-width: 1024px) {
@@ -1249,7 +1301,7 @@ button, input {
   }
   .info-p__cont {
     width: 480px;
-    padding: 0 10px 10px;
+    padding: 0 10px 20px;
     position: relative;
     border-left: 1px solid #8BCB94;
     border-right: 1px solid #8BCB94;
@@ -1266,8 +1318,18 @@ button, input {
     width: auto;
     background: #8BCB94;
   }
+  .info-p__cont--line:after {
+    transform: translate(0, 0);
+  }
   .info-list__item:last-child {
     border-bottom: 0;
+  }
+  .info-list__link {
+    transition: 0.3s all ease;
+  }
+  .info-list__link:hover {
+    color: #fff;
+    background: #8BCB94;
   }
 }
 @media (min-width: 1280px) {
