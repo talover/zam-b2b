@@ -39,3 +39,14 @@
     }
   }
 }
+
+@media(min-width: 1024px) {
+  .section {
+    &__header {
+      &-inner {
+        max-width: 1524px;
+        padding: 0 42px;
+      }
+    }
+  }
+}

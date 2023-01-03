@@ -1041,7 +1041,13 @@ button, input {
   margin-right: auto;
   padding-left: 28px;
   padding-right: 28px;
-  max-width: 1336px;
+  max-width: 1524px;
+}
+@media (min-width: 1024px) {
+  .main-container {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
 }
 
 .text-center {
@@ -1148,6 +1154,12 @@ button, input {
     font-size: 40px;
   }
 }
+@media (min-width: 1024px) {
+  .section__header-inner {
+    max-width: 1524px;
+    padding: 0 42px;
+  }
+}
 .info-p {
   display: flex;
   flex-wrap: wrap;
@@ -1201,5 +1213,75 @@ button, input {
   .info-p__list-cont .info-p__list-w {
     width: 50%;
     padding: 0 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .info-p__list-cont {
+    display: none;
+  }
+  .info-p > .info-p__list-w {
+    display: block;
+    width: calc(50% - 240px);
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .info-p > .info-p__list-w:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-top: -1px;
+    height: 1px;
+    width: 100000px;
+    background: #8BCB94;
+  }
+  .info-p > .info-p__list-w--left {
+    padding-right: 10px;
+  }
+  .info-p > .info-p__list-w--left:after {
+    right: 10px;
+  }
+  .info-p > .info-p__list-w--right {
+    padding-left: 10px;
+  }
+  .info-p > .info-p__list-w--right:after {
+    left: 10px;
+  }
+  .info-p__cont {
+    width: 480px;
+    padding: 0 10px 10px;
+    position: relative;
+    border-left: 1px solid #8BCB94;
+    border-right: 1px solid #8BCB94;
+  }
+  .info-p__cont:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    right: 10px;
+    margin-top: -1px;
+    height: 1px;
+    width: auto;
+    background: #8BCB94;
+  }
+  .info-list__item:last-child {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .info-p > .info-p__list-w {
+    width: calc(50% - 259px);
+  }
+  .info-p > .info-p__list-w--left {
+    padding-right: 20px;
+  }
+  .info-p > .info-p__list-w--right {
+    padding-left: 20px;
+  }
+  .info-p__cont {
+    width: 518px;
+    padding: 0 20px 20px;
   }
 }
