@@ -433,5 +433,61 @@ block content
               .checkbox__text Нажимая на кнопку, вы принимаете условия обработки данных
 
           a(href="").btn.btn--primary.col-full Отправить
+    
+    .gallery
+      .gallery__header
+        .main-container
+          h2.category-title Фото парков
+          .gallery__nav
+
+        <div class="swiper photo-slider">
+          <div class="swiper-wrapper">
+            - for (var x = 1; x <= 20; x++)
+              <div class="swiper-slide photo-slider__item">
+                .photo-slider__img-w
+                  img(src="img/gallery/gallery-"+ x +".jpg", alt="").photo-slider__img
+              </div>
+          </div>
+        </div>
+
+    .contacts
+      .main-container
+        .contacts__inner
+          .contacts__info
+            h3.contacts__info-position Личный менеджер
+            h3.contacts__info-name Екатерина Ерохина
+            p Менеджер по продажам B2B
+          .contacts__cont
+            h2.category-title Контакты
+
+            ul.contacts-list
+              li.contacts-list__item
+                a(href="tel:+7 925 154 25 64").contacts-list__link 
+                  span.contacts-list__link-text +7 925 154 25 64
+                  span.contacts-list__link-icon
+                    svg.icon.icon--call
+                      use(href="img/sprite.svg#call")
+
+              li.contacts-list__item
+                a(href="mailto:eerohina@zamania.ru").contacts-list__link 
+                  span.contacts-list__link-text eerohina@zamania.ru
+                  span.contacts-list__link-icon
+                    svg.icon.icon--mark_email_unread
+                      use(href="img/sprite.svg#mark_email_unread")
+
+              li.contacts-list__item
+                a(href="" target="_blank").contacts-list__link 
+                  span.contacts-list__link-text @za_b2b
+                  span.contacts-list__link-icon
+                    svg.icon.icon--telegram
+                      use(href="img/sprite.svg#telegram")
+                  
+              li.contacts-list__item
+                a(href="" target="_blank").contacts-list__link 
+                  span.contacts-list__link-text WhatsApp
+                  span.contacts-list__link-icon
+                    svg.icon.icon--whats-app
+                      use(href="img/sprite.svg#whats-app")
+
 
       
