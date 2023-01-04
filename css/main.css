@@ -1516,6 +1516,9 @@ button, input {
 .gallery {
   margin-top: 50px;
 }
+.gallery__nav {
+  display: none;
+}
 
 .photo-slider__img-w {
   border-radius: 10px;
@@ -1796,6 +1799,96 @@ button, input {
   .info-list__link:hover {
     color: #fff;
     background: #8BCB94;
+  }
+  .feedback {
+    padding-bottom: 0;
+    margin-top: -20px;
+  }
+  .feedback .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feedback__header {
+    display: block;
+    width: calc(50% - 240px);
+    padding: 30px 0;
+    position: relative;
+  }
+  .feedback__form {
+    margin: 0;
+    width: 480px;
+    max-width: none;
+    padding: 30px 10px 20px;
+    position: relative;
+    border-left: 1px solid #8BCB94;
+    border-right: 1px solid #8BCB94;
+  }
+  .feedback .checkbox {
+    padding-left: 24px;
+  }
+  .photo-slider__item {
+    width: 470px;
+  }
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 700px;
+  }
+  .contacts-list__item:nth-child(1) {
+    order: 0;
+  }
+  .contacts-list__item:nth-child(2) {
+    order: 2;
+  }
+  .contacts-list__item:nth-child(3) {
+    order: 1;
+  }
+  .contacts-list__item:nth-child(4) {
+    order: 3;
+  }
+  .gallery__header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery__header .category-title {
+    width: calc(100% - 100px);
+  }
+  .gallery__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery__nav-btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #8BCB94;
+    border-radius: 100px;
+    color: #8BCB94;
+    transition: 0.3s all ease;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .gallery__nav-btn:hover {
+    color: #fff;
+    background: #8BCB94;
+  }
+  .gallery__nav-btn .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .gallery__nav-btn--prev .icon {
+    transform: rotate(-90deg);
+    margin-left: -4px;
+  }
+  .gallery__nav-btn--next {
+    margin-left: 10px;
+  }
+  .gallery__nav-btn--next .icon {
+    transform: rotate(90deg);
+    margin-left: 4px;
   }
 }
 @media (min-width: 1280px) {

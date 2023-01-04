@@ -412,9 +412,10 @@ block content
     
     .feedback 
       .main-container
-        h2.category-title Есть вопросы?
+        .feedback__header
+          h2.category-title Есть вопросы?
 
-        p Мы с радостью ответим! Каждый день мы работаем над тем, чтобы наши клиенты были счастливы.
+          p Мы с радостью ответим! Каждый день мы работаем над тем, чтобы наши клиенты были счастливы.
 
         form.feedback__form
           .form-row
@@ -435,21 +436,27 @@ block content
           a(href="").btn.btn--primary.col-full Отправить
     
     .gallery
-      .gallery__header
-        .main-container
+      .main-container
+        .gallery__header
           h2.category-title Фото парков
           .gallery__nav
+            .gallery__nav-btn.gallery__nav-btn--prev.photo-slider--prev
+              svg.icon.icon-caret-up
+                use(href="img/sprite.svg#caret-up")
+            .gallery__nav-btn.gallery__nav-btn--next.photo-slider--next
+              svg.icon.icon-caret-up
+                use(href="img/sprite.svg#caret-up")
 
-        <div class="swiper photo-slider">
-          <div class="swiper-wrapper">
-            - for (var x = 1; x <= 20; x++)
-              <div class="swiper-slide photo-slider__item">
-                .photo-slider__img-w
-                  a(href="img/gallery/gallery-open-"+ x +".jpg" target="_blank") 
-                    img(src="img/gallery/gallery-"+ x +".jpg", alt="").photo-slider__img
-              </div>
-          </div>
+      <div class="swiper photo-slider">
+        <div class="swiper-wrapper">
+          - for (var x = 1; x <= 20; x++)
+            <div class="swiper-slide photo-slider__item">
+              .photo-slider__img-w
+                a(href="img/gallery/gallery-open-"+ x +".jpg" target="_blank") 
+                  img(src="img/gallery/gallery-"+ x +".jpg", alt="").photo-slider__img
+            </div>
         </div>
+      </div>
 
     .contacts
       .main-container
@@ -491,21 +498,27 @@ block content
                       use(href="img/sprite.svg#whats-app")
               
     .gallery
-      .gallery__header
-        .main-container
+      .main-container
+        .gallery__header
           h2.category-title Наши партнеры
           .gallery__nav
+            .gallery__nav-btn.gallery__nav-btn--prev.partners-slider--prev
+              svg.icon.icon-caret-up
+                use(href="img/sprite.svg#caret-up")
+            .gallery__nav-btn.gallery__nav-btn--next.partners-slider--next
+              svg.icon.icon-caret-up
+                use(href="img/sprite.svg#caret-up")
 
-        <div class="swiper partners-slider">
-          <div class="swiper-wrapper">
-            - for (var x = 1; x <= 11; x++)
-              <div class="swiper-slide partners-slider__item">
-                a(href="img/partners/partners-"+ x +".png" target="_blank") 
-                  .partners-slider__img-w
-                    img(src="img/partners/partners-"+ x +".png", alt="").partners-slider__img
-              </div>
-          </div>
+      <div class="swiper partners-slider">
+        <div class="swiper-wrapper">
+          - for (var x = 1; x <= 11; x++)
+            <div class="swiper-slide partners-slider__item">
+              a(href="img/partners/partners-"+ x +".png" target="_blank") 
+                .partners-slider__img-w
+                  img(src="img/partners/partners-"+ x +".png", alt="").partners-slider__img
+            </div>
         </div>
+      </div>
           
 
 

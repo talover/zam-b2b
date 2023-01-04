@@ -6,6 +6,10 @@ var swiper = new Swiper(".photo-slider", {
   centeredSlides: true,
   spaceBetween: 10,
   loop: true,
+  navigation: {
+    nextEl: '.photo-slider--next',
+    prevEl: '.photo-slider--prev'
+  }
 });
 
 var swiper = new Swiper(".partners-slider", {
@@ -17,4 +21,8 @@ var swiper = new Swiper(".partners-slider", {
     delay: 5000,
     disableOnInteraction: false,
   },
+  navigation: {
+    nextEl: '.partners-slider--next',
+    prevEl: '.partners-slider--prev'
+  }
 });
