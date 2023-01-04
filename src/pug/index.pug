@@ -409,3 +409,29 @@ block content
                 a.info-list__link(href="") Аудиореклама
               li.info-list__item
                 a.info-list__link(href="") Пуш-рассылка по базе
+    
+    .feedback 
+      .main-container
+        h2.category-title Есть вопросы?
+
+        p Мы с радостью ответим! Каждый день мы работаем над тем, чтобы наши клиенты были счастливы.
+
+        form.feedback__form
+          .form-row
+            input(type="text" placeholder="Ваше имя").form-row__input
+
+          .form-row
+            input(type="tel" placeholder="Номер телефона").form-row__input.phone-mask
+          
+          .form-row
+            label.checkbox
+              .checkbox__cont
+                input(type="checkbox").checkbox__input
+                .checkbox__check
+                  svg.icon.icon--check
+                    use(href="img/sprite.svg#check")
+              .checkbox__text Нажимая на кнопку, вы принимаете условия обработки данных
+
+          a(href="").btn.btn--primary.col-full Отправить
+
+      

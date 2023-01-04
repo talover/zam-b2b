@@ -63,6 +63,28 @@
   }
 }
 
+.feedback {
+  border-bottom: 1px solid #8BCB94;
+  border-top: 1px solid #8BCB94;
+  padding: 20px 0 20px;
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 1.3;
+
+  .checkbox {
+    padding-left: 10px;
+  }
+
+  p {
+    margin: 0 0 15px;
+  }
+
+  &__form {
+    display: block;
+    margin: 22px 0 0;
+  }
+}
+
 @media(min-width: 640px) {
   .info-list {
     &__link {
