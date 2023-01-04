@@ -1279,6 +1279,12 @@ button, input {
   background: #3343E2;
   color: #fff;
 }
+.spinner__btn.disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #fff;
+  cursor: default;
+}
 .spinner__info {
   width: 100%;
   margin-top: 5px;
@@ -1844,8 +1850,14 @@ button, input {
   .contacts-list__item:nth-child(3) {
     order: 1;
   }
+  .contacts-list__item:nth-child(3) .contacts-list__link-text {
+    min-width: 190px;
+  }
   .contacts-list__item:nth-child(4) {
     order: 3;
+  }
+  .contacts-list__item:nth-child(4) .contacts-list__link-text {
+    min-width: 190px;
   }
   .gallery__header {
     display: flex;

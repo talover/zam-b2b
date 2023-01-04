@@ -154,6 +154,13 @@
       background: #3343E2;
       color: #fff;
     }
+
+    &.disabled {
+      background: #ccc;
+      border-color: #ccc;
+      color: #fff;
+      cursor: default;
+    }
   }
 
   &__info {
