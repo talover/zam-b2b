@@ -220,6 +220,28 @@
   }
 }
 
+.partners-slider {
+  &__item {
+    width: 175px;
+  }
+
+  &__img-w {
+    height: 175px;
+    border: 1px solid #8BCB94;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 @media(min-width: 640px) {
   .info-list {
     &__link {

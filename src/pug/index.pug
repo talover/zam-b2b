@@ -445,7 +445,8 @@ block content
             - for (var x = 1; x <= 20; x++)
               <div class="swiper-slide photo-slider__item">
                 .photo-slider__img-w
-                  img(src="img/gallery/gallery-"+ x +".jpg", alt="").photo-slider__img
+                  a(href="img/gallery/gallery-open-"+ x +".jpg" target="_blank") 
+                    img(src="img/gallery/gallery-"+ x +".jpg", alt="").photo-slider__img
               </div>
           </div>
         </div>
@@ -488,6 +489,24 @@ block content
                   span.contacts-list__link-icon
                     svg.icon.icon--whats-app
                       use(href="img/sprite.svg#whats-app")
+              
+    .gallery
+      .gallery__header
+        .main-container
+          h2.category-title Наши партнеры
+          .gallery__nav
+
+        <div class="swiper partners-slider">
+          <div class="swiper-wrapper">
+            - for (var x = 1; x <= 11; x++)
+              <div class="swiper-slide partners-slider__item">
+                a(href="img/partners/partners-"+ x +".png" target="_blank") 
+                  .partners-slider__img-w
+                    img(src="img/partners/partners-"+ x +".png", alt="").partners-slider__img
+              </div>
+          </div>
+        </div>
+          
 
 
       
